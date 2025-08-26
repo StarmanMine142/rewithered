@@ -14,6 +14,7 @@ repositories {
     maven { url = "https://maven.parchmentmc.org" }
     maven { url = "https://maven.terraformersmc.com/" }
     maven { url = "https://maven.fzzyhmstrs.me/"}
+    maven { url = "https://jitpack.io" }
     exclusiveContent {
         forRepository {
             maven {
@@ -37,6 +38,9 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${property("fabric_version")}"
     modImplementation "com.terraformersmc:modmenu:${property("modmenu_version")}"
     modImplementation "me.fzzyhmstrs:fzzy_config:${property("fzzy_version")}"
+    modImplementation(include("com.github.ramixin:mixson-fabric:${project.mixson_version}")) {
+        exclude group: "net.fabricmc.fabric-api", module: "fabric-api"
+    }
 }
 
 processResources {

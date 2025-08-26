@@ -1,4 +1,4 @@
-package me.pajic.modid;
+package me.pajic.rewithered;
 
 import net.fabricmc.api.ClientModInitializer;
 

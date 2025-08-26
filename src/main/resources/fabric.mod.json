@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "rewithered",
   "version": "${version}",
-  "name": "modname",
-  "description": "",
-  "authors": [],
+  "name": "Rewithered",
+  "description": "Adds wither potions and arrows and integrates them into the world",
+  "authors": ["pajic"],
   "contact": {},
   "license": "MIT",
   "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
     "client": [
-      "me.pajic.modid.ClientMain"
+      "me.pajic.rewithered.ClientMain"
     ],
     "main": [
-      "me.pajic.modid.Main"
+      "me.pajic.rewithered.Main"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "rewithered.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
