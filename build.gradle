@@ -87,20 +87,21 @@ publishMods {
 
     modrinth {
         accessToken = providers.environmentVariable("MR_KEY")
-        projectId = "projectId"
+        projectId = "UY95etAw"
         minecraftVersions.add(stonecutter.current.version)
         requires("fabric-api")
         requires("fzzy-config")
         optional("modmenu")
+        embeds("mixson")
     }
 
     curseforge {
         accessToken = providers.environmentVariable("CF_KEY")
-        projectId = "projectId"
+        projectId = "1335211"
         minecraftVersions.add(stonecutter.current.version)
         javaVersions.add(JavaVersion.VERSION_21)
-        clientRequired = true
         serverRequired = true
+        clientRequired = true
         requires("fabric-api")
         requires("fzzy-config")
         optional("modmenu")

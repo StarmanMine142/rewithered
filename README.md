@@ -13,7 +13,6 @@ Requires [Fabric API](https://modrinth.com/mod/fabric-api) and [Fzzy Config](htt
 - Lingering variant can be used to craft Arrows of Decay, identically to how other tipped arrows are crafted.
 
 ### Wither skeleton tweaks
-
 Wither skeletons now:
 - Spawn instead of regular skeletons in soul sand valleys and nether fortresses.
 - Wield a bow in soul sand valleys, and have a chance to wield a bow in nether fortresses.
