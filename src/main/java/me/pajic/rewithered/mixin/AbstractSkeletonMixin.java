@@ -47,7 +47,7 @@ public abstract class AbstractSkeletonMixin extends Mob {
         boolean isInFortress = level.getLevel().structureManager().getStructureAt(
                 getOnPos(),
                 level.registryAccess().lookupOrThrow(Registries.STRUCTURE).getOrThrow(BuiltinStructures.FORTRESS).value()
-        ) == StructureStart.INVALID_START;
+        ) != StructureStart.INVALID_START;
         if (getType() == EntityType.WITHER_SKELETON) {
             if (
                     Main.CONFIG.witherSkeletonTweaks.useBowsInSoulSandValley.get() &&

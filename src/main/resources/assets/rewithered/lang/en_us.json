@@ -1,5 +1,6 @@
 {
   "rewithered.config": "Mod Configuration",
+  "rewithered.config.decayPotion": "Potion of Decay",
   "rewithered.config.decayPotion.enabled": "Enable Potion of Decay",
   "rewithered.config.decayPotion.duration": "Potion duration (seconds)",
   "rewithered.config.decayPotion.strength": "Potion strength",
@@ -8,6 +9,7 @@
   "rewithered.config.decayPotion.strongDuration": "Strong potion duration (seconds)",
   "rewithered.config.decayPotion.strongStrength": "Strong potion strength",
 
+  "rewithered.config.witherSkeletonTweaks": "Wither skeletons",
   "rewithered.config.witherSkeletonTweaks.replaceSkeletonsInSoulSandValley": "Replace skeletons in soul sand valley",
   "rewithered.config.witherSkeletonTweaks.replaceSkeletonsInSoulSandValley.desc": "When enabled, wither skeletons will spawn instead of skeletons in soul sand valleys.",
   "rewithered.config.witherSkeletonTweaks.replaceSkeletonsInFortress": "Replace skeletons in nether fortresses",

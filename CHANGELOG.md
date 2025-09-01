@@ -1,1 +1,2 @@
-- Initial release.
+- Fixed wither skeleton bow chances being inverted by accident.
+- Added missing config translation text.
