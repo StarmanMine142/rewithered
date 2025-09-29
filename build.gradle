@@ -12,6 +12,7 @@ group = mod_group_id
 repositories {
     maven {url = "https://maven.fzzyhmstrs.me/"}
     maven {url = "https://thedarkcolour.github.io/KotlinForForge/"}
+    maven {url = "https://jitpack.io"}
 }
 
 base {
@@ -60,6 +61,12 @@ configurations {
 
 dependencies {
     implementation "me.fzzyhmstrs:fzzy_config:${property("fzzy_version")}+neoforge"
+    jarJar(implementation("com.github.ramixin:mixson-neoforge:${project.mixson_version}")) {
+        version {
+            strictly 'v1.4.0'
+            prefer 'v1.4.0'
+        }
+    }
 }
 
 tasks.withType(ProcessResources).configureEach {
@@ -102,14 +109,14 @@ publishMods {
 
     modrinth {
         accessToken = providers.environmentVariable("MR_KEY")
-        projectId = "projectId"
+        projectId = "UY95etAw"
         minecraftVersions.add(stonecutter.current.version)
         requires("fzzy-config")
     }
 
     curseforge {
         accessToken = providers.environmentVariable("CF_KEY")
-        projectId = "projectId"
+        projectId = "1335211"
         minecraftVersions.add(stonecutter.current.version)
         javaVersions.add(JavaVersion.VERSION_21)
         clientRequired = true
